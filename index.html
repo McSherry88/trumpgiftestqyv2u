@@ -15,12 +15,17 @@
             loading-screen="enabled: false;"
             arjs="sourceType: webcam; debugUIEnabled: false;"
         >
-                <a-image
+                <a-entity
                     src="assets/asset.gif"
                     look-at="[gps-camera]"
+                rotation="-90 0 0"
+                geometry="primitive:plane"
+                material="shader:gif;src:url(20181138140108sMGxF65b152e0f17c33d387c1b33cc0b0be1e.gif);"
+                gif="" transparent="true"
                     scale="1 1 1"
                     gps-entity-place="latitude: 40.221475; longitude: -74.002997;"
-                ></a-image>
+                    
+                ></a-entity>
 
             <a-camera gps-camera rotation-reader></a-camera>
         </a-scene>
